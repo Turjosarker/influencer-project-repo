@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins-thin-font {
+  font-family: "Poppins", sans-serif;
+ 
+ 
+}
+/* shered style */
+.display-flex{
+  display: flex;
+  margin: 0 auto;
+}
+.bg-color{
+  background-color: rgb(255, 255, 255);
+}
+.color{
+  color: #3A3A3A;
+}
+
+
+/* header nav part style */
+.nav-link{
+  text-decoration: none;
+  gap: 20px;
+  
+ }
+.navber{
+ justify-content: space-between;
+ align-items: center;
+ font-size: 1.25rem;
+font-weight: 600;
+ 
+
+}
+.company{
+  margin-left: 120px;
+ 
+}
+.nav-item{
+  list-style: none;
+}
+/* header containte style */
+.banner-container{
+ max-width: 1440px;
+ margin: 0 auto;
+ /* align-items: center; */
+
+
+}
+.banner-title{
+  font-size: 3.25rem;
+  font-weight: 700;
+   margin-left: 120px;           
+}
+.banner-description{
+  font-size:1rem;
+ font-weight: 600;
+ margin-left: 120px;        
+}
+.btn-parimary{
+  font-weight: 700;
+  width: 196px;
+  height: 44px;
+  font-size: 1rem;
+  border-radius: 41px;
+  color: #FFFFFF;
+  background-color: #E02C6D;
+  margin-left: 120px
+}
+ 
+
+.banner-image{
+  box-sizing: border-box;
+  /* Brand / Purple 100 */
+  border: 4px dashed rgb(241, 228, 255);
+ 
+  margin-right: 150px;
+
+}
+
+
+/* small devices responsive */
+@media screen and (max-width:576px) {
+  .navber,
+  .company,
+  .nav-link{
+    flex-direction:column;
+  }
+  .banner{
+    flex-direction: column-reverse ;
+   
+  }
+  
+  .banner-description, 
+  .btn-parimary,
+  .banner-title,
+  .navber
+  {
+    
+   margin-left: 0px;        
+  }
+  
+  
+ 
+  .banner-image{
+   margin:50px;
+   border: none;
+
+  }
+  .banner-container{
+    padding-right: 20px;
+    justify-content: center;
+    text-align: center;
+   
+  }
+  
+}
