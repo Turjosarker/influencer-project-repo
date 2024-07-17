@@ -93,6 +93,74 @@ font-weight: 600;
   grid-template-columns: repeat(7,1fr);
 }
 
+/* card style digien */
+.card-header{
+  background-color:#F3F3F3;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.card-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap:10px;
+  margin: 0 auto;
+}
+.skill{
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  margin-left: 30px;
+  margin-bottom:30px ;
+  border-radius: 15px;
+  width: 100%;
+ 
+ 
+}
+.card-img{
+  border-radius: 20px;
+  padding:15px ;
+  width: calc(100% - 25px);
+}
+.card-title{
+  margin-top: 4px;
+  margin-left: 14px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #18191F;
+  /* border: 2px solid green; */
+  margin-bottom: -39px;
+  font-weight: 500;
+}
+.card-price{
+  color: rgba(0, 0, 0, 0.87);
+  /* font-family: Inter; */
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 14px;
+  margin-bottom: 1px;
+}
+.card-description{
+  color: rgb(120, 120, 133);
+font-family: Inter;
+font-size: 14px;
+font-weight: 700;
+line-height: 143%;
+/* letter-spacing: 1.8%; */
+text-align: left;
+margin-left: 14px;
+}
+.color{
+  
+  color: #FB8200;
+  
+}
+ 
+#turjo{
+  /* border: 2px solid green;
+   */
+   margin-left: 14px ;
+}
 
 /* small devices responsive */
 @media screen and (max-width:576px) {
@@ -105,7 +173,8 @@ font-weight: 600;
     flex-direction: column-reverse ;
    
   }
-  .sponcer-company{
+  .sponcer-company,
+  .card-section{
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 30px;
@@ -113,6 +182,13 @@ font-weight: 600;
     padding: 0px;
     margin-top: 40px;
   }
+  .sponcer-container{
+    max-width: 1110px;
+    height: auto;
+   
+  }
+  
+  
   
   .banner-description, 
   .btn-parimary,
@@ -123,7 +199,9 @@ font-weight: 600;
     margin: 0px;
     margin-left: 0px;        
   }
-  
+  .btn-parimary{
+    margin-top: 20px;
+  }
   
  
   .banner-image{
@@ -137,6 +215,15 @@ font-weight: 600;
     text-align: center;
    
   }
+  .card-img{
+    padding: 0px;
+  }
+  .card-header{
+    /* margin-bottom: 100px; */
+  }
+  .skill{
+    margin: 0px;
+  }
   
   
 }
@@ -146,13 +233,33 @@ font-weight: 600;
   .banner{
     flex-direction: row;
   }
-  .sponcer-company{
-    grid-template-columns: repeat(4, 1fr);
+  .sponcer-company
+  {
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 10px;
     margin: 0px;
     padding: 0px;
     margin-top: 40px;
+  }
+  .card-section{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px;
+    padding: 0px;
+   
+   
+  }
+  .card-img{
+    padding: 0px;
+  }
+
+  .skill,
+  .card-title,
+  .card-price,
+  .card-description,
+  #turjo{
+  margin: 0px;
+
   }
   
 }
