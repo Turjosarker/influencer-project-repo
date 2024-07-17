@@ -161,6 +161,30 @@ margin-left: 14px;
    */
    margin-left: 14px ;
 }
+#btn{
+  
+}
+
+/* Featured products at one place style */
+.container{
+  display: flex;
+  gap: 90px;
+  
+}
+.image-container{
+  border-radius: 7px;
+  
+}
+.button{
+  font-weight: 700;
+  width: 196px;
+  height: 44px;
+  font-size: 1rem;
+  border-radius:5px;
+  color: #FFFFFF;
+  background-color: #E02C6D;
+  
+}
 
 /* small devices responsive */
 @media screen and (max-width:576px) {
@@ -169,9 +193,16 @@ margin-left: 14px;
   .nav-link{
     flex-direction:column;
   }
-  .banner{
+  .banner, .container{
     flex-direction: column-reverse ;
-   
+  
+  }
+  .container{
+    margin-top: 10px;
+    flex-direction: column-reverse ;
+   justify-content: center;
+   align-items: center;
+  
   }
   .sponcer-company,
   .card-section{
@@ -219,7 +250,7 @@ margin-left: 14px;
     padding: 0px;
   }
   .card-header{
-    /* margin-bottom: 100px; */
+    margin-bottom: 50px;
   }
   .skill{
     margin: 0px;
@@ -251,6 +282,11 @@ margin-left: 14px;
   }
   .card-img{
     padding: 0px;
+  }
+  .sponcer-container{
+    max-width: 1110px;
+    height: auto;
+   
   }
 
   .skill,
